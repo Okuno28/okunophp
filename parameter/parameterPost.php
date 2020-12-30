@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>taskParameter</title>
-    <?php // URL : http://localhost/git/parameter/parameterPost.php ?>
+    <?php // URL : http://localhost/okunophp/parameter/parameterPost.php ?>
 </head>
 <body>
     <p><?php echo "str1は、" . $_POST['1'] . "です。";?></p>
