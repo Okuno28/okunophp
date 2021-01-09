@@ -19,7 +19,7 @@
         $total = $totalApple + $totalOrange;
         $totalTax = $total * TAX;
         $totalNum = $numApple + $numOrange;
-        $oneFruit = round ($total / $totalNum, 0);
+        $oneFruit = round ($total / $totalNum);
     ?>
     <p><?php echo('りんごの総額（税抜）は' . $totalApple . '円です。'); ?></p>
     <p><?php echo('オレンジの総額（税抜）は' . $totalOrange . '円です。'); ?></p>
