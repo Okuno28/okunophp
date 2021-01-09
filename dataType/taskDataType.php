@@ -12,6 +12,10 @@
         $appleInt = "5";
         echo( "りんごが" . $appleInt . "個あります。");
     ?></p>
+    <p><?php 
+        $doubleString = "string型を使用するときに、ダブルクオート(\")を表示する場合は、バックスラッシュ(\\)が必要です。";
+        echo($doubleString);
+    ?></p>
     <p><?php echo( 'I\'m Security Enginner'); ?></p>
     <p><?php
         const HELLO = "こんばんは";
