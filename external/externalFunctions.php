@@ -20,7 +20,7 @@
         $avg = 0;
         foreach($array as $number){
             $total += $number;
-            $avg = round($total / count($array), 0);
+            $avg = round($total / count($array));
         }
         return $avg;
     };
