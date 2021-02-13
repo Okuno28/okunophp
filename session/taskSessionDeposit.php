@@ -1,15 +1,21 @@
 <?php //URL : http://localhost/okunophp/session/taskSessionDeposit.php ?>
 <?php
 // ここに回答を追記する
-$sum = 0;
 session_start();
-if(isset($_POST["save"]) && isset($_POST["money"])){
-    $int = $_POST["money"];
-    $sum += $int;
-    /*足し算の際に追加ができない。
-    新しく数値を入力した際に、また　0＋$int　となり、積み上げていく方法がわからない*/
+$money = 0;
+if(isset($_POST['money'])){
+    $money = (int)$_POST['money'];
+}
+$sum = 0;
+if(isset($_POST['clear'])){
+    session_destroy();
 }else{
-    $sum = 0;
+    if(!isset($_SESSION['money'])){//数値が何もない場合
+        $_SESSION['money'] = $money;
+    }else{
+        $_SESSION['money'] += $money;
+    }
+    $sum = $_SESSION['money'];
 }
 
 ?>
