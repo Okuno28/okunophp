@@ -29,15 +29,21 @@
         echo('<br>合計 ' . $total);
        
     ?></p>
-    <table border = 1>
-        <?php /*出力されない。上記の$tableを下記に入れても同様のエラー発生。
-                warning: invalid argument suppiled for foreach()*/ ?>
-        <?php foreach(randomRecursiveCalc($int) as $row){ ?>
-            <?php foreach($row as $cel){ ?>
-                <td><?= $cel?></td>
-            <?php } ?>
+    <table>
+        <tr>
+            <th>回</th>
+            <th>数値</th>
+        <?php foreach($table as $key => $value){ 
+            echo('<tr>');
+            echo('<td>' . ($key) . '</td>');
+            echo('<td>' . $value . '</td>');
+            echo('</tr>');
+        }
+        ?>
+        <tr>
+            <td>合計</td>
+            <td><?php echo($total); ?></td>
         </tr>
-        <?php } ?>
     </table>
-</body>
+    </body>
 </html>
