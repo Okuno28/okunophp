@@ -9,11 +9,11 @@
     </head>
     <body>
     <p><?php //課題１
-        echo("insert into country values (1, '日本', 'アジア', '日本語', 81); </br>");
-        echo("insert into country values (2, 'イタリア', 'ヨーロッパ', 'イタリア語', 39); </br>");
-        echo("insert into country values (3, 'アメリカ合衆国', '北アメリカ', '英語', 1); </br>");
-        echo("insert into country values (4, 'フランス', 'ヨーロッパ', 'フランス語', 33); </br>");
-        echo("insert into country (id, name, area, number) values (5, 'イギリス', 'ヨーロッパ', 44); </br>");
+        echo("insert into country (name, area, lang, number) values ('日本', 'アジア', '日本語', 81); </br>");
+        echo("insert into country (name, area, lang, number) values ('イタリア', 'ヨーロッパ', 'イタリア語', 39); </br>");
+        echo("insert into country (name, area, lang, number) values ('アメリカ合衆国', '北アメリカ', '英語', 1); </br>");
+        echo("insert into country (name, area, lang, number) values ('フランス', 'ヨーロッパ', 'フランス語', 33); </br>");
+        echo("insert into country (name, area, lang, number) values ('イギリス', 'ヨーロッパ', '英語', 44); </br>");
     ?></p>
     <p><?php //課題２
         echo("insert into heritage values (1, '自由の女神像', 3, '文化'); </br>");

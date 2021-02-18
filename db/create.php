@@ -10,7 +10,7 @@
     <body>
     <p><?php
         echo("create table country( </br>
-            id int not null auto_increment primary key, </br>
+            id int auto_increment primary key, </br>
             name varchar(20) not null, </br>
             area varchar(10), </br>
             lang varchar(10) default '英語', </br>
@@ -18,7 +18,7 @@
     ?></p>
     <p><?php
         echo("create table heritage( </br>
-            id int not null auto_increment primary key, </br>
+            id int auto_increment primary key, </br>
             name varchar(20) not null, </br>
             country_id int not null, </br>
             type varchar(2) not null); </br>");
